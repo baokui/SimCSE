@@ -18,7 +18,7 @@ export OMP_NUM_THREADS=8
 python -m torch.distributed.launch --nproc_per_node $NUM_GPU --master_port $PORT_ID train.py \
     --model_name_or_path /search/odin/guobk/data/simcse/simcse_roberta_zh_l12 \
     --train_file /search/odin/guobk/data/simcse/superdata/train0.csv \
-    --output_dir search/odin/guobk/data/simcse/simcse_roberta_zh_l12_sup \
+    --output_dir /search/odin/guobk/data/simcse/simcse_roberta_zh_l12_sup \
     --num_train_epochs 3 \
     --per_device_train_batch_size 128 \
     --learning_rate 5e-5 \
