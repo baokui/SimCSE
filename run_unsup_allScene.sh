@@ -21,5 +21,4 @@ nohup python train.py \
     --overwrite_output_dir \
     --temp 0.05 \
     --do_train \
-    --do_eval \
     --fp16 >> log/train.log 2>&1 &
