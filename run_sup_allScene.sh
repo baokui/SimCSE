@@ -14,8 +14,8 @@ export OMP_NUM_THREADS=8
 
 # Use distributed data parallel
 # If you only want to use one card, uncomment the following line and comment the line with "torch.distributed.launch"
-# python train.py \
-python -m torch.distributed.launch --nproc_per_node $NUM_GPU --master_port $PORT_ID train.py \
+python train.py \
+# python -m torch.distributed.launch --nproc_per_node $NUM_GPU --master_port $PORT_ID train.py \
     --model_name_or_path /search/odin/guobk/data/simcse/simcse_roberta_zh_l12 \
     --train_file /search/odin/guobk/data/simcse/superdata/train0.csv \
     --output_dir /search/odin/guobk/data/simcse/simcse_roberta_zh_l12_sup \
