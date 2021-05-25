@@ -31,5 +31,4 @@ python -m torch.distributed.launch --nproc_per_node $NUM_GPU --master_port $PORT
     --overwrite_output_dir \
     --temp 0.05 \
     --do_train \
-    --do_eval \
     --fp16  >> log/train-sup.log 2>&1 &
