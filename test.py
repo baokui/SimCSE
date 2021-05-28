@@ -21,7 +21,7 @@ with open('/search/odin/guobk/data/bert_semantic/finetuneData_new_test/Docs.json
 with open('/search/odin/guobk/data/bert_semantic/finetuneData_new_test/Queries.json','r') as f:
     Queries = json.load(f)
 Sd = [Docs[i]['content'] for i in range(len(Docs))]
-Vd = model.encode(S)
+Vd = model.encode(Sd)
 Sq = [Queries[i]['content'] for i in range(1000)]
 Vq = model.encode(Sq)
 Vd = Vd.numpy()
