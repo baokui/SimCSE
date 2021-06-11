@@ -12,7 +12,7 @@ if mode=='sup':
     path_model = "/search/odin/guobk/data/simcse/simcse_roberta_zh_l12_sup" 
     path_target="/search/odin/guobk/data/bert_semantic/finetuneData_new_test/result-simcse_sup.json"
 else:
-    modeltag = 'simcse_sup'
+    modeltag = 'simcse_upsup'
     path_model = "/search/odin/guobk/data/simcse/simcse_roberta_zh_l12"
     path_target="/search/odin/guobk/data/bert_semantic/finetuneData_new_test/result-simcse_unsup.json"
 model = SimCSE(path_model)
